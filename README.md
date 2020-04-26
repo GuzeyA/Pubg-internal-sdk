@@ -2,7 +2,7 @@
 Some basics for pubg hacks. Mibht be useful
 
 how to use:
-[CODE]
+```
 HRESULT __stdcall HookedPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT Flags)
 {
   static bool Init = true;
@@ -14,4 +14,5 @@ HRESULT __stdcall HookedPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, U
   }
   Hack::MainLoop();
 }
-[/CODE]
+
+```

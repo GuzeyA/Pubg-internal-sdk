@@ -5,14 +5,14 @@ how to use:
 ```
 HRESULT __stdcall HookedPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT Flags)
 {
-  static bool Init = true;
+	static bool Init = true;
 	if (Init)
 	{
 		Offsets::Init();
 		Decrypt::Init();
-    Init = false;
-  }
-  Hack::MainLoop();
+		Init = false;
+	}
+	Hack::MainLoop();
 }
 
 ```
